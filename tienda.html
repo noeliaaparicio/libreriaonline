@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge";>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Librería Farenheit</title>
+  <link rel="stylesheet" href="Formato - prueba menu.css" type="text/css" >
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+</head>
+ 
+<body>
+
+  <header>
+    <br>
+    <center><nav id="logo"><img src = "logo.png" width="20%"></nav></center>
+    <br>
+    <br>
+    <input type="checkbox" id="btn-menu">
+    <label for="btn-menu"><i class="fas fa-bars"></i>   
+    </label>
+    <nav class="menu">
+    <ul>
+      <li><a href="Home.html">Home</a></li>
+      <li><a href="tienda.html">Tienda online</a></li>
+      <li><a href="Interactivo.html">Interactivo</a></li>
+      <li><a href="Novedades.html">Novedades</a></li>
+      <li><a href="about.html">Sobre nosotros</a></li>
+      <li><a href="registro.html">Registrate!</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+      <li><a href="WishList.html">WishList</a></li>
+
+    </ul>
+  </nav>
+</header>
+
+
+<!--Inicio de sesión-->
+  <div class="page-nav">
+    <form>
+      <div class="mb-3">
+        <h1>Inicia sesión</h1>
+        <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      </div>
+      <div class="mb-3"> </br>
+        <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+        <input type="password" class="form-control" id="exampleInputPassword1">
+      </div><bR>
+        <center>
+      <button type="submit" class="btn btn-primary" >Aceptar</button>
+      <br>
+      <button id="checkout" class="button-checkout" onclick="pay()"><i class="fas fa-shopping-basket"></i></button>
+      </center>
+
+    </form>
+      
+  <!--Tienda Online-->  
+  </div>
+    <div class="page-content">
+      <div class="product-container">
+          <h3>Al final mueren los dos</h3>
+          <img src="AlFinalMuerenLosDos.png" />
+          <h1>$1750</h1>
+          <button class="button-add" onclick="add('Al final mueren los dos  $1750', 1750)">Agregar</button>
+      </div>
+
+      <div class="product-container">
+          <h3>A través de ti</h3>
+          <img src="ATravesDeTi.png" />
+          <h1>$1749</h1>
+          <button class="button-add" onclick="add('A través de ti   $1749', 1749)">Agregar</button>
+      </div>
+
+      <div class="product-container">
+          <h3>Asesino de Brujas- La Bruja Blanca</h3>
+          <img src="BrujaBlanca.png" />
+          <h1>$1790</h1>
+          <button class="button-add" onclick="add('Asesino de Brujas- La Bruja Blanca   $1790', 1790)">Agregar</button>
+      </div>
+
+      <div class="product-container">
+          <h3>Caraval</h3>
+          <img src="Caraval.png" />
+          <h1>$1790</h1>
+          <button class="button-add" onclick="add('Caraval  $1790', 1790)">Agregar</button>
+      </div>
+
+      <div class="product-container">
+          <h3>El italiano</h3>
+          <img src="elItaliano.png" />
+          <h1>$2599</h1>
+          <button class="button-add" onclick="add('El italiano  $2599', 2599)">Agregar</button>
+      </div>
+
+      <div class="product-container">
+          <h3>Forastera</h3>
+          <img src="forastera.png" />
+          <h1>$2399</h1>
+          <button class="button-add" onclick="add('Forastera     $2399', 2399)">Agregar</button>
+      </div>
+      <div class="product-container">
+          <h3>Heartstopper</h3>
+          <img src="heartstopper.png" />
+          <h1>$1300</h1>
+          <button class="button-add" onclick="add('Heartstopper   $1300', 1300)">Agregar</button>
+      </div>
+      <div class="product-container">
+            <h3>Las señoritas</h3>
+            <img src="LasSeñoritas.png" />
+            <h1>$2049</h1>
+            <button class="button-add" onclick="add('Las señoritas   $2049', 2049)">Agregar</button>
+            </div>
+      <div class="product-container">
+              <h3>Los siete maridos de Evelyn Hugo</h3>
+              <img src="Los7MaridosDeEvelynHugo.png" />
+              <h1>$1990</h1>
+              <button class="button-add" onclick="add('Los siete maridos de Evelyn Hugo   $1990', 1990)">Agregar</button>
+              </div>
+      <div class="product-container">
+              <h3>Nosotros en la luna</h3>
+              <img src="NosotrosEnLaLuna.png" />
+              <h1>$1790</h1>
+              <button class="button-add" onclick="add('Nosotros en la luna   $1790', 1790)">Agregar</button>
+              </div>
+      <div class="product-container">
+              <h3>Horóscopo chino 2022</h3>
+              <img src="horoscopo2022.png" />
+              <h1>$1299</h1>
+              <button class="button-add" onclick="add('Horóscopo chino 2022  $1299', 1299)">Agregar</button>
+              </div>
+      <div class="product-container">
+              <h3>Pecadora</h3>
+              <img src="pecadora.png" />
+              <h1>$1880</h1>
+              <button class="button-add" onclick="add('Pecadora  $1880', 1880)">Agregar</button>
+              </div>
+      <div class="product-container">
+              <h3>El libro mas lindo del mundo</h3>
+              <img src="ElLibroMasLindoDelMundo.png" />
+              <h1>$1449</h1>
+              <button class="button-add" onclick="add('El libro mas lindo del mundo   $1449', 1449)">Agregar</button>
+              </div>
+      <div class="product-container">
+              <h3>A fuego lento</h3>
+              <img src="AFuegoLento.png" />
+              <h1>$1950</h1>
+              <button class="button-add" onclick="add('A fuego lento   $1950', 1950)">Agregar</button>
+              </div>
+      <div class="product-container">
+              <h3>De sangre y cenizas</h3>
+              <img src="DeSangreYCenizas.png" />
+              <h1>$2490</h1>
+              <button class="button-add" onclick="add('De sangre y cenizas  $2490', 2490)">Agregar</button>
+              </div>
+      <div class="product-container">
+              <h3>Primera persona del singular</h3>
+              <img src="PrimeraPersonaDelSingular.png" />
+              <h1>$1790</h1>
+              <button class="button-add" onclick="add('Primera persona del singular    $1790', 1790)">Agregar</button>
+              </div>
+      <div class="product-container">
+              <h3>La tía Cosima</h3>
+              <img src="LaTiaCosima.png" />
+              <h1>$949</h1>
+              <button class="button-add" onclick="add('La tía Cosima    $949', 949)">Agregar</button>
+              </div>
+      <div class="product-container">
+              <h3>Solo nosotros dos</h3>
+              <img src="soloNosotrosDos.png" />
+              <h1>$2499</h1>
+              <button class="button-add" onclick="add('Solo nosotros dos    $2499', 2499)">Agregar</button>
+              </div>
+      <div class="product-container">
+                <h3>Hasta que te vuelva a ver</h3>
+                <img src="hastaQueTeVuelvaAVer.png" />
+                <h1>$1699</h1>
+                <button class="button-add" onclick="add('Hasta que te vuelva a ver    $1699', 1699)">Agregar</button>
+                </div>
+        <div class="product-container">
+                <h3>De pronto oigo la voz del agua</h3>
+                <img src="dePronto.png" />
+                <h1>$1399</h1>
+                <button class="button-add" onclick="add('De pronto oigo la voz del agua   $1399', 1399)">Agregar</button>
+                </div>
+
+
+        </div>
+      </div>
+    
+    
+    </html>
+    <br>
+    <footer style="background:#FFADAD;">
+      <br>
+      <p style="text-align: center;">Derechos reservados <i class="far fa-copyright"></i> Noelia Aparicio        
+        <a href="www.facebook.com"><i class="fab fa-facebook"></i></a>
+        <a href="www.twitter.com"><i class="fab fa-twitter-square"></i></a>
+      </p> 
+    
+    
+    </footer>
+    <script type="text/javascript" src="jscripts.js"></script>
+    </body>
+    </html>
+   

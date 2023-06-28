@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge";>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Librería Farenheit</title>
+  <link rel="stylesheet" href="Formato - prueba menu.css" type="text/css" >
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+</head>
+ 
+<body id="blogPage" onload="mostrar()">
+
+  <header>
+    <br>
+    <center><nav id="logo"><img src = "logo.png" width="20%"></nav></center>
+    <br>
+    <br>
+    <input type="checkbox" id="btn-menu">
+    <label for="btn-menu"><i class="fas fa-bars"></i>   
+    </label>
+    <nav class="menu">
+    <ul>
+      <li><a href="Home.html">Home</a></li>
+      <li><a href="tienda.html">Tienda online</a></li>
+      <li><a href="Interactivo.html">Interactivo</a></li>
+      <li><a href="Novedades.html">Novedades</a></li>
+      <li><a href="about.html">Sobre nosotros</a></li>
+      <li><a href="registro.html">Registrate!</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+      <li><a href="WishList.html">WishList</a></li>
+
+    </ul>
+  </nav>
+</header>
+<center>
+<div id="contentWrapper">
+    <article id="mainContent">
+        <h1>WishList</h1>
+        <article class="post">
+            <p>¿Qué libros te gustaría tener?</p>
+        </article>
+        <div id="container">
+            <ul id="lista" type="none" contenteditable>
+                <li>Escribí acá los libros que te gustaría comprar en un futuro, o que te gustaría que te regalen:</li>
+            </ul>
+            <p><a href="#" onclick="guardar()">Guardar</a></p>
+            <p><a href="#" onclick="borrar()">Eliminar</a></p>
+</div>
+</div>
+</article>
+</center>
+<script type="text/javascript" src="wishList.js"></script>
+</body>
+</html>
